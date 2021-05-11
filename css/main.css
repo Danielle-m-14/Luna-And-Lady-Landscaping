@@ -12,8 +12,8 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
+  color: white;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -87,13 +87,104 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  background-color: #07782d;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
-h1,
-h3 {
+.content-wrapper {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.25rem;
   color: white;
+}
+
+.header-contact {
+  width: 50%;
+  flex-direction: column;
+  text-align: right;
+  line-height: 0.6;
+  padding-right: 0.2rem;
+}
+
+.header-contact a {
+  text-decoration: none;
+  font-size: 0.6rem;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main h1 {
   text-align: center;
+}
+
+#services,
+.services-heading,
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#services h2 {
+  color: red;
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.services-container h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.services-container img {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.services-container {
+  margin-bottom: 15%;
+}
+
+footer {
+  text-align: center;
+}
+
+footer h2 {
+  color: red;
+  margin-bottom: 8%;
+}
+
+footer h5 a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .fab {
+  font-size: 60px;
+  color: royalblue;
 }
 
 /* ==========================================================================
