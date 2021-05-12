@@ -15,6 +15,7 @@ html {
   color: white;
   font-size: 16px;
   line-height: 1.4;
+  font-family: "Roboto", sans-serif;
 }
 
 /*
@@ -90,37 +91,19 @@ body {
   background-color: black;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .content-wrapper {
   width: 100%;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: red;
-}
-
-nav {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  color: white;
-}
+/*HEADER*/
 
 .header-contact {
-  width: 50%;
-  flex-direction: column;
-  text-align: right;
-  line-height: 0.6;
-  padding-right: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 2% 1% 2%;
 }
 
 .header-contact a {
@@ -128,6 +111,23 @@ nav a {
   font-size: 0.6rem;
   color: white;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0 5% 0;
+  background-color: red;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 2% 0 2%;
+  font-size: 1.3em;
+}
+
+/*MAIN*/
 
 main {
   display: flex;
@@ -137,7 +137,20 @@ main {
 
 main h1 {
   text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
 }
+
+.main_img_container {
+  display: flex;
+  justify-content: center;
+}
+
+main img {
+  width: 100%;
+}
+
+/*SERVICES*/
 
 #services,
 .services-heading,
@@ -170,6 +183,7 @@ main h1 {
 
 footer {
   text-align: center;
+  margin-bottom: 12%;
 }
 
 footer h2 {
@@ -274,6 +288,62 @@ footer .fab {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+} /* don't delete */
+
+@media only screen and (min-width: 1150px) {
+  /*Desktop styles here*/
+
+  .header-contact {
+    margin: 0.5% 2% 0.5% 2%;
+  }
+
+  .header-contact p {
+    font-size: 1.2rem;
+    color: red;
+  }
+
+  nav {
+    padding: 2% 0 2% 0;
+  }
+
+  nav a {
+    font-size: 2rem;
+  }
+
+  main h1 {
+    font-size: 5rem;
+  }
+
+  .main_img_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+
+  main img {
+    width: 60%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .big-services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 8%;
+  }
+
+  .services-container {
+    width: 23%;
+    margin: 0 1% 0 1%;
+  }
+} /* don't delete */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
