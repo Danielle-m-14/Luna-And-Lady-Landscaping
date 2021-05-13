@@ -109,7 +109,7 @@ body {
 .header-contact a {
   text-decoration: none;
   font-size: 0.6rem;
-  color: white;
+  color: red;
 }
 
 nav {
@@ -292,9 +292,35 @@ footer .fab {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 
+  .header-contact p {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    font-size: 1.7em;
+  }
+
   /*MAIN TABLET*/
+
+  main h1 {
+    font-size: 5rem;
+  }
+
   /*SERVICES TABLET*/
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3,
+  h5 {
+    font-size: 1.5rem;
+  }
+
   /*FOOTER TABLET*/
+  footer .fab {
+    font-size: 4.1rem;
+  }
 } /* don't delete */
 
 @media only screen and (min-width: 1150px) {
@@ -305,8 +331,7 @@ footer .fab {
   }
 
   .header-contact p {
-    font-size: 1.2rem;
-    color: red;
+    font-size: 1.4rem;
   }
 
   nav {
