@@ -197,7 +197,7 @@ footer h5 a {
 }
 
 footer .fab {
-  font-size: 60px;
+  font-size: 3.75rem;
   color: royalblue;
 }
 
@@ -291,6 +291,10 @@ footer .fab {
 
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
+
+  /*MAIN TABLET*/
+  /*SERVICES TABLET*/
+  /*FOOTER TABLET*/
 } /* don't delete */
 
 @media only screen and (min-width: 1150px) {
@@ -313,6 +317,8 @@ footer .fab {
     font-size: 2rem;
   }
 
+  /*MAIN DESKTOP*/
+
   main h1 {
     font-size: 5rem;
   }
@@ -324,24 +330,51 @@ footer .fab {
   }
 
   main img {
-    width: 60%;
+    width: 50%;
     text-align: center;
   }
 
+  /*SERVICES DESKTOP*/
+
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 
   .big-services-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 8%;
+    padding-bottom: 8%;
+    min-height: 10rem;
   }
 
   .services-container {
     width: 23%;
     margin: 0 1% 0 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .services-container h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .services-container img {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  /*FOOTER DESKTOP*/
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  footer .fab {
+    font-size: 5.75rem;
   }
 } /* don't delete */
 
